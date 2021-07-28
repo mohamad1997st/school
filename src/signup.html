@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علمني | صفحة انشاء حساب</title>
+    <script  type="text/html" src="{require('index.js')}"></script>
+</head>
+<body>
+    <div class="container-fluid" id="signup-page">
+        <div class="container">
+            <div class="overlay">
+                <div class="img-header text-center">
+                    <img src="./images/logo.png" alt="شعار الموقع">
+                </div>
+                <div class="title-header text-center">
+                    <h2>
+                        انشاء حساب  جديد 
+                    </h2>
+                </div>
+                <div class="title-question text-center">
+                    <h2>
+                        ؟ هل لديك حساب
+                         <span>
+                             <a class="btn signup-question-btn" href="signin.html">تسجيل الدخول</a>
+                         </span>
+                    </h2>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="الاسم الاول" name="First_name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" class="form-control"
+                            placeholder="البريد الالكتروني" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="الاسم الاخير" name="Last_name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="كلمة السر" name="password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="تاريخ الميلاد" name="date_birth" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="تأكيد كلمة السر" name="password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn custom-btn-signin" type="submit">
+                                تسجيل الدخول
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn custom-btn-forget" type="submit">
+                                نسيت كلمة المرور
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="return-home-page">
+                <a href="index.html" class="btn custom-return-btn">العودة للصفحة الرئيسية</a>
+            </div>
+        </div>
+    </div> 
+    <div id="footer-copyright-social-signin" class="col-12">
+        <div class="container">
+            <div class="clearfix">
+                <div id="copyright" class="float-end">
+                    جميع الحقوق محفوظة لمدرسة علمني الابتدائية لسنة 2021
+                </div>
+                <div id="social-icons" class="float-start">
+                    <a href="https://www.facebook.com">
+                        <i class="fab fa-facebook-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-twitter-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

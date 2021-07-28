@@ -559,16 +559,247 @@ body {
     font-weight: 700;
     font-size: 20px;
 }
+/**************************
+***************************
+******Contact page *******
+**************************
+**************************/
 #map {
     padding: 0
 }
+.contact-page {
+    position: relative;
+    top: -30px;
+    background-color: #ffffff;
+    width: 80%;
+    height: 100%;
+    padding: 20px 0px 35px;
+    margin:  0 auto 
+}
+.contact-detailes {
+    background-color: #ECECEC;
+    width: calc(100% - 36px);
+    height: 100%;
+    position: relative;
+    margin: 12px;
+}
+.contact-detailes .form-group {
+    margin: 25px 5px 25px
+}
+.contact-detailes .form-group .form-control {
+    height: 50px;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+}
+.contact-detailes .form-group .input-message {
+    height: 120px;
+}
+.contact-detailes .form-group .send-btn, .contact-detailes .form-group .cancel-btn {
+    box-shadow: none; 
+    border-radius: 0;   
+}
+.contact-detailes .form-group .cancel-btn {
+    float: left;
+    background-color: #444444;
+    color: #fff;
+}
+.contact-detailes .form-group .send-btn {
+    background-color: #45b5b7;
+    color: #fff
+}
+.contact-detailes .form-group .cancel-btn:hover {
+    background-color: #45b5b7;
+}
+.contact-detailes .title-heading h1 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 25px
+}
+.contact-detailes .title-heading p {
+    font-size: 24px;
+    font-weight: 400;
+}
+.contact-detailes .custom-contact-list {
+    margin: 50px 0 90px;
+}
+.custom-contact-list .icon {
+    font-size: 18px;
+    color: #f8ad47
+}
+.custom-contact-list .detaile-icon {
+    font-weight: bolder;
+    margin-top: 10px;
+}
+/**************************
+***************************
+******SIGNIN page *******
+**************************
+**************************/
 
-
-
-
-
-
-
+#signin-page {
+    background-image: url(../images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+#signin-page .overlay {
+    background-color: #fff;
+    width: 60%;
+    padding: 40px 80px 50px;
+    position:absolute;
+    right: 20%;
+    top: 15%;
+}
+.overlay .img-header img {
+    height: 100px;
+    width: 80px;
+    margin: 0 0 15px;
+    
+}
+.overlay .title-header h2 {
+    font-size: 18px;
+    position: relative;
+    padding: 10px 0;
+    font-weight: 800;
+}
+.overlay .title-header h2:before {
+    content:"";
+    width: 150px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    padding: 1px 0;
+    bottom: -5px;
+    right: 38%;
+}
+.overlay .title-question h2 {
+    font-size: 24px;
+    color: #abaaaa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.title-question .signup-question-btn {
+    font-size: 12px;
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none !important;
+    text-decoration: underline;
+}
+.title-question .signup-question-btn:hover {
+    color: #45b5b7;
+    font-weight:800;
+}
+.overlay .title-header h2:after {
+    content:"";
+    width: 150px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    padding: 1px 0;
+    top: -5px;
+    right: 38%;
+}
+.overlay .form-group {
+    margin: 20px 0 15px;
+}
+.overlay .form-group .form-control {
+    height: 45px;
+    box-shadow: none;
+    border: 1px solid #45b5b7;
+    border-radius: 0;
+}
+.overlay .custom-btn-signin {
+    border-radius: 0;
+    background-color: #45b5b7;
+    color: #fff;
+    box-shadow: none;
+    width: 100%;
+}
+.overlay .custom-btn-signin:hover {
+    background-color: #049293;
+    font-weight: 700;
+}
+#signin-page .custom-return-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-weight: 800;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+#signin-page .custom-return-btn:before{
+    content: ">";
+    position:absolute;
+    left: -3px;
+    font-size: 24px;
+    top: 2px;
+}
+#footer-copyright-social-signin {
+    padding: 9px 30px;
+    background-color: #011d30;
+    color: #fff;
+    font-weight: 500;
+}
+#footer-copyright-social-signin a {
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none !important;
+}
+/**************************
+***************************
+******SIGNUP page *******
+**************************
+**************************/
+#signup-page {
+    background-image: url(../images/bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+#signup-page .overlay {
+    background-color: #fff;
+    width: 60%;
+    padding: 40px 80px 50px;
+    position:absolute;
+    right: 20%;
+    top: 5%;
+}
+.custom-btn-forget {
+    border-radius: 0;
+    background-color: #444444;
+    color: #fff;
+    box-shadow: none;
+    width: 100%;
+}
+.custom-btn-forget:hover {
+    color: #fff;
+    background-color: #45b5b7;
+}
+#signup-page .custom-return-btn {
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
+    font-weight: 800;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+#signup-page .custom-return-btn:before{
+    content: ">";
+    position:absolute;
+    left: -3px;
+    font-size: 24px;
+    top: 2px;
+}
 
 
 

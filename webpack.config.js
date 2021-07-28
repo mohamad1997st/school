@@ -18,7 +18,7 @@ module.exports = {
 
     devServer: {
         contentBase: path.join(__dirname, "/dist"),
-        port: 3425,
+        port: 5678,
         writeToDisk: true,
         open: true,
     },
@@ -113,6 +113,14 @@ module.exports = {
         new HtmlWebapckPlugin({ 
             filename: "contact.html",
             template: "./src/contact.html",
+        }),
+        new HtmlWebapckPlugin({ 
+            filename: "signin.html",
+            template: "./src/signin.html",
+        }),
+        new HtmlWebapckPlugin({ 
+            filename: "signup.html",
+            template: "./src/signup.html",
         }),
 
         new MiniCssExtractPlugin({filename: "css/style.css"}),

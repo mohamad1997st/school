@@ -24,7 +24,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item first-list-element">
+                            <li class="nav-item">
                                 <a href="./index.html" class="nav-link">الصفحة الرئيسية</a>
                             </li>
                             <li class="nav-item">
@@ -49,7 +49,7 @@
                                 <a href="./contact.html" class="nav-link">تواصل معنا</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./signup.html" class="nav-link">تسجيل الدخول</a>
+                                <a href="./signin.html" class="nav-link">تسجيل الدخول</a>
                             </li>
                         </ul>
                     </div>
@@ -64,16 +64,155 @@
         <!--الخريطة-->
         <div class="row">
             <div class="col-12" id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.742521489087!2d35.48651591473634!3d33.87052593473264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1745f8a7ffe9%3A0xf64bd86538cd7f8b!2sLe%20Lyc%C3%A9e%20National%20School%20-%20Beirut%20Branch!5e0!3m2!1sen!2slb!4v1627408768710!5m2!1sen!2slb" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.742521489087!2d35.48651591473634!3d33.87052593473264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1745f8a7ffe9%3A0xf64bd86538cd7f8b!2sLe%20Lyc%C3%A9e%20National%20School%20-%20Beirut%20Branch!5e0!3m2!1sen!2slb!4v1627408768710!5m2!1sen!2slb" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <!--الخريطة-->
-
-
-
-
-
-        
+        <div class="contact-page">
+            <div id="school-detailes">
+                <div class="container">
+                    <div class="row">
+                        <!--بداية قسم القائمة-->
+                        <div class="col-lg-3">
+                            <button class="btn btn-collapse collapsed d-lg-none d-md-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+                                <i class="fas fa-angle-down arrow-btn"></i>
+                                <span>إختر من القائمة</span>
+                            </button>
+                            <div id="collapseOne" class="collapse d-lg-block">
+                                <div class="list-group">
+                                    <a href="index.html" class="list-group-item list-group-item-action ">
+                                        <i class="fas fa-home ms-2"></i>الصفحة الرئيسية
+                                    </a>
+                                    <a href="aboutus.html" class="list-group-item list-group-item-action">
+                                        <i class="fas fa-home ms-2"></i> من نحن   
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <i class="fas fa-newspaper ms-2"></i>الأخبار   
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <i class="fab fa-servicestack ms-2"></i> الخدمات   
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <i class="fas fa-school ms-2"></i> المرافق و المباني   
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <i class="fab fa-algolia ms-2"></i> الصور و الفيديوهات
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <i class="fas fa-graduation-cap ms-2"></i>التعليم و البرامج   
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">   
+                                        <i class="fas fa-cog ms-2"></i> الإعدادات
+                                    </a>
+                                    <a href="contact.html" class="list-group-item list-group-item-action active">
+                                        <i class="fas fa-phone ms-2"></i>تواصل معنا   
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">   
+                                        <i class="fas fa-question-circle ms-2"></i> مساعدة
+                                    </a>
+                                </div>  
+                            </div>
+                        </div>
+                        <!--نهاية قسم القائمة-->
+                        <!--بداية قسم معلومات التواصل-->
+                        <div class="col-lg-9">
+                            <form id="contact-form">
+                                <div class="row contact-detailes">
+                                    <div class="col-md-6">
+                                        <div class="col-12 form-group">
+                                            <input type="text" class="form-control"
+                                            placeholder="الاسم الاول" name="First_name" required>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <input type="text" class="form-control"
+                                            placeholder="الاسم الأخير" name="Last_name" required>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <input type="email" class="form-control"
+                                            placeholder="البريد الالكتروني" name="email" required>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <input type="text" class="form-control"
+                                            placeholder="المنطقة" name="area" required>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <select class="form-control"
+                                            name="country" required>
+                                                <option disabled selected value="">إختر مدينة</option>
+                                                <option value="SY">سوريا</option>
+                                                <option value="LB">لبنان</option>
+                                                <option value="IR">العراق</option>
+                                                <option value="JO">الأردن</option>
+                                                <option value="SA">المملكة العربية السعودية</option>
+                                                <option value="EG">مصر</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <select class= "form-control" 
+                                            name="city" required>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <textarea class="form-control input-message" name="message" placeholder="نص الرسالة" required></textarea>
+                                        </div>
+                                        <div class="col-12 form-group d-flex">
+                                            <div class="col-6">
+                                                <button class="btn send-btn" type="submit">إرسال الرسالة</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <button class="btn cancel-btn" type="submit">إلغاء الرسالة</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="title-heading">
+                                            <h1>اتصل بنا</h1>
+                                            <p>نحن دائماً في خدمتك</p>
+                                        </div>
+                                        <div class="row custom-contact-list">
+                                            <div class="col-2 icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                الموقع الرئيسي  
+                                                <div class="detaile-icon">
+                                                    <span>
+                                                        البقاع - الهرمل
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row custom-contact-list">
+                                            <div class="col-2 icon">
+                                                <i class="fas fa-phone"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                الهاتف
+                                                <div class="detaile-icon">
+                                                    <span>00456333545</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row custom-contact-list">
+                                            <div class="col-2 icon">
+                                                <i class="fas fa-envelope-open-text"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                البريد الالكتروني
+                                                <div class="detaile-icon">
+                                                    <span>almnischool@email.org</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--نهاية قسم معلومات التواصل-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--بداية قسم تذييل الصفحة-->
     <div id="footer">
