@@ -208,23 +208,20 @@ body {
     margin: 30px;
     font-size: 35px;
 }
-#students-items .carousel-inner {
-    margin-right: 25px;
-}
 #students-items .card {
     height: 100%;
-    width: 304px;
+    width: 100%;
     border: 2px solid #d4d4d4;
 }
 #students-items .card:hover {
     border: 2px solid #049293;
 }
 #students-items .card .card-icons img {
-    height: 350px;
-    width: 300px;
+    height: 200px;
+    width: 100%;
 }
 #students-items .card .card-body h5 {
-    font-size: 25px;
+    font-size: 18px;
     color: #000;
     font-weight: 700;
     margin-bottom: 15px;
@@ -246,6 +243,16 @@ body {
 }
 #students-items .custom-carousel-indicators>li.active{
     background-color: #049293;
+}
+.custom-arrow-btn {
+    position: static;
+    border:1px solid #dbdbdb;
+    margin-top: 10px;
+    box-shadow: none !important;
+}
+#carousel-school-student-alternative .card .card-body h5, 
+#carousel-school-student-alternative .card .card-body p {
+    text-align: center;
 }
 #smart-students h4.title-heading {
     margin: 35px;
@@ -506,14 +513,14 @@ body {
     font-size: 20px;
     line-height: 30px;
 }
-#school-detailes .custom-more-read-btn {
+.custom-more-read-btn {
     float: right;
     color: #ffffff;
     background-color: #45b5b7;
     border-radius: 0;
     font-size: 16px;
 }
-#school-detailes .custom-more-read-btn:hover {
+.custom-more-read-btn:hover {
     background-color: #049293;
     font-weight: 700;
 }
@@ -800,12 +807,153 @@ body {
     font-size: 24px;
     top: 2px;
 }
-
-
-
-
-
-
+/*************************
+**************************
+********Student-one*******
+**************************
+*************************/
+#carousel-student-one {
+    position: relative;
+}
+#carousel-student-one .carousel-inner img {
+    height: 550px;
+    padding: 15px 15px;
+    border: 3px solid #dbdbdb;
+    margin-top: 15px;
+}
+#carousel-student-one .carousel-indicators {
+    position: relative;
+    right: -30px;
+    top: -70px;
+}
+#carousel-student-one .carousel-indicators img {
+    height: 90px;
+    width: 70px;
+    margin-left: 10px;
+    border: 4px solid #dbdbdb;
+}
+#carousel-student-one .carousel-indicators img.active{
+    border: 4px solid #45b5b7;
+}
+.student-primary {
+    margin-top: 35px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.student-primary h1 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 5px;
+}
+.border-between .clearfix {
+    border-bottom: 1px solid #dbdbdb;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.name-student, .age-student {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+}
+.age-student{
+    color: #45b5b7;
+    font-weight: 500;
+}
+.student-description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.button-read {
+    width: 100%;
+    padding: 0 5px 10px;
+}
+.button-read .custom-more-read-btn {
+    width: 100%;
+}
+.class-and-position {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 5px;
+}
+.class-and-position .class {
+    font-weight: 500;
+    padding: 10px 5px;
+}
+.class-and-position .position {
+    float: left;
+    font-weight: 600;
+    padding: 10px 5px;
+    color: #f8ad47;
+}
+.hobbies .title, .social-icons .title {
+    font-size: 16px;
+    color: #abaaaa;
+    font-weight: 400;
+    padding: 3px;
+}
+.hobbies-options {
+    padding: 10px 5px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.hobbies-options .hobbie-option {
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    margin-left: 16px;
+    width: 100%;
+    text-align: center;
+}
+.hobbies-options .hobbie-option:hover {
+    background-color: #fff;
+    color: #f8ad47;
+    font-weight: 700;
+}
+.social-icons {
+    padding: 10px 5px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.social-icons a {
+    font-size: 24px;
+    text-decoration: none !important;
+    margin: 2px 55px 0;
+    color: #abaaaa;
+}
+.social-icons a:hover {
+    color: #f8ad47;
+}
+.student-detailes-one {
+    border-bottom: 1px solid #dbdbdb;
+}
+.student-notes .title-heading h1{
+    margin: 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.custom-table {
+    border: 3px solid #dbdbdb;
+    border-radius: 15px;
+    overflow:hidden;
+    box-shadow: 0 0 20px #abaaaa;
+    
+}
+.table .custom-thead {
+    background-color: #f8ad47;
+    color: #fff
+}
+.table .note {
+    color: #000;
+    font-weight: 700
+}
+.table .general-note {
+    font-weight: 700;
+}
+.table-note {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 5px 0 30px;
+}
+.custom-body {
+    background-color: #fff;
+}
 
 
 

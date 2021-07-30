@@ -64,7 +64,7 @@ module.exports = {
                 loader: "file-loader",
                 options: {
                     name: '[name].[ext]',
-                    outputPath: 'images',
+                    outputPath: "/images",
                 },
             },*/
 
@@ -91,7 +91,7 @@ module.exports = {
                         options:
                         {
                             name: '[name].[ext]',
-                            outputPath: "fonts",
+                            outputPath: "/fonts",
                             esModule: false,
                         }
                     }
@@ -122,7 +122,10 @@ module.exports = {
             filename: "signup.html",
             template: "./src/signup.html",
         }),
-
+        new HtmlWebapckPlugin({ 
+            filename: "st6page.html",
+            template: "./src/st6page.html",
+        }),
         new MiniCssExtractPlugin({filename: "css/style.css"}),
 
         new OptimizeCssAssetsWepackPlugin({}),

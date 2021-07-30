@@ -5,7 +5,6 @@ import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min';
 import '@popperjs/core/dist/umd/popper.min';
 import '@fortawesome/fontawesome-free/js/all.min';
-
 import $ from "jquery";
 
 $(document).ready(function(){
