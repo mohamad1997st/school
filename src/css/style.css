@@ -924,11 +924,6 @@ body {
 .student-detailes-one {
     border-bottom: 1px solid #dbdbdb;
 }
-.student-notes .title-heading h1{
-    margin: 15px;
-    font-size: 35px;
-    font-weight: 700;
-}
 .custom-table {
     border: 3px solid #dbdbdb;
     border-radius: 15px;
@@ -954,6 +949,65 @@ body {
 .custom-body {
     background-color: #fff;
 }
+.features .title-heading h2 {
+    font-size: 36px;
+    color: #555555;
+}
+.features {
+    padding: 35px 0;
+    background-color: #fff;
+}
+.features .title-heading-one:after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 2px;
+    background-color: #45b5b7;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title-heading-one {
+    position: relative;
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.features .feature .card {
+    border: 0;
+}
+
+.features .feature {
+    padding: 50px 0;
+    border-bottom: 3px solid #dbdbdb;
+}
+.features .feature .card .card-body h5 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #45b5b7;
+    border-right: 2px solid #45b5b7;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+.features .feature .card .card-body p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+}
+.features .feature .card .card-icon img {
+    margin: 0 4rem;
+}
+.features .feature .card .card-body {
+    margin-top: 50px
+}
+.features .feature:nth-of-type(even) {
+    text-align: left;
+}
+.features .feature:nth-of-type(even) .card .card-body h5 {
+    border-right: 0px;
+    border-left: 2px solid #45b5b7;
+}
+
 
 
 

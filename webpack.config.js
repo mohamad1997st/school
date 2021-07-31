@@ -18,7 +18,7 @@ module.exports = {
 
     devServer: {
         contentBase: path.join(__dirname, "/dist"),
-        port: 5678,
+        port: 7890,
         writeToDisk: true,
         open: true,
     },
