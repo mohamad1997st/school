@@ -126,6 +126,10 @@ module.exports = {
             filename: "st6page.html",
             template: "./src/st6page.html",
         }),
+        new HtmlWebapckPlugin({ 
+            filename: "st7page.html",
+            template: "./src/st7page.html",
+        }),
         new MiniCssExtractPlugin({filename: "css/style.css"}),
 
         new OptimizeCssAssetsWepackPlugin({}),

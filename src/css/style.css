@@ -160,10 +160,6 @@ body {
     background-color: #000;
     margin: auto
 }
-#activities-items .title-heading h3 {
-    margin: 30px;
-    font-size: 35px;
-}
 #activities-items .container {
     padding: 5px;
 
@@ -203,10 +199,6 @@ body {
     margin-right: 5px;
     margin-left: 5px;
     font-weight: 400;
-}
-#students-items h4.title-heading {
-    margin: 30px;
-    font-size: 35px;
 }
 #students-items .card {
     height: 100%;
@@ -253,10 +245,6 @@ body {
 #carousel-school-student-alternative .card .card-body h5, 
 #carousel-school-student-alternative .card .card-body p {
     text-align: center;
-}
-#smart-students h4.title-heading {
-    margin: 35px;
-    font-size: 30px;
 }
 #smart-students .card {
     margin-top: 10px;
@@ -529,12 +517,6 @@ body {
     color: #444444;
     font-weight: 800;
     margin-left: 12px;
-}
-#news h2 {
-    font-size: 24px;
-    margin: 20px 0;
-    text-align: center;
-    font-weight: 700;
 }
 #news .card {
     margin-bottom : 15px;
@@ -818,7 +800,6 @@ body {
 #carousel-student-one .carousel-inner img {
     height: 550px;
     padding: 15px 15px;
-    border: 3px solid #dbdbdb;
     margin-top: 15px;
 }
 #carousel-student-one .carousel-indicators {
@@ -904,8 +885,9 @@ body {
     text-align: center;
 }
 .hobbies-options .hobbie-option:hover {
-    background-color: #fff;
-    color: #f8ad47;
+    color: #fff;
+    background-color: #f8ad47;
+    border: 1px solid #f8ad47;
     font-weight: 700;
 }
 .social-icons {
@@ -949,15 +931,17 @@ body {
 .custom-body {
     background-color: #fff;
 }
-.features .title-heading h2 {
+.title-heading-one h2 {
     font-size: 36px;
     color: #555555;
 }
-.features {
-    padding: 35px 0;
+#white-page {
     background-color: #fff;
 }
-.features .title-heading-one:after{
+.features {
+    padding: 35px 0;
+}
+.title-heading-one:after{
     content:"";
     position: absolute;
     bottom: 0;
@@ -1007,6 +991,48 @@ body {
     border-right: 0px;
     border-left: 2px solid #45b5b7;
 }
+.suggestions {
+    padding: 30px 0;
+
+}
+.suggestions .card {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+}
+.suggestions .card:hover {
+    border: 2px solid #f8ad47;
+    box-shadow: 0 0 15px #f8ad47;
+}
+.suggestions .card .card-icons img {
+    height: 100%;
+    width: 100%
+}
+.suggestions .custom-student-btn-detailes {
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    color: #000;
+}
+.suggestions .custom-student-btn-detailes:hover {
+    background-color: #f8ad47;
+    border: 1px solid #f8ad47;
+    color:#fff;
+    font-weight: 700;
+}
+.suggestions .card .card-body h5 {
+    font-size: 20px;
+    font-weight: 800;
+}
+.suggestions .card .card-body p {
+    font-size: 16px;
+    color: #555555;
+}
+.suggestions .card .card-body p span {
+    color:#f8ad47;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
 
 
 
