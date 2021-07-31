@@ -248,9 +248,10 @@ body {
 }
 #smart-students .card {
     margin-top: 10px;
-    height: 95%;
+    height: 100%;
     width: 352px;
-    margin-right: 100px;
+    justify-content: center;
+    margin: 0 auto;
     position: relative;
     border: 2px solid #dbdbdb;
 }
@@ -275,7 +276,7 @@ body {
 }
 #smart-students .card .card-icons img {
     height: 350px;
-    width: 350px
+    width: 350px;
 }
 #smart-students .card .card-body h5 {
     font-size: 35px;
@@ -302,6 +303,7 @@ body {
     background-color: #02253d;
     padding: 50px 0 50px 0;
     margin-top: 30px;
+    position: relative;
 }
 #footer .title-footer {
     position: relative;
@@ -1088,6 +1090,10 @@ body {
         font-size: 18px;
         line-height: 20px;
     }
+    .logo-header img {
+        height: 100px;
+        right: 50%;
+    }
     .custom-body-items{
         background-color: #f8f8f8;
         box-shadow: none;
@@ -1154,17 +1160,55 @@ body {
         background-color: transparent;
         font-size: 18px;
     }
+    #activities-items .card-body:nth-child(odd) {
+        text-align: left;
+    }
     #news .card .card-icons img {
         width: 335px
     }
+    #footer .title-footer h6, #footer .title-footer p {
+        text-align: center;
+    }
+    #footer .title-footer h6:before {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        width: 100px;
+        height: 3px;
+        bottom: 8px;
+    }
+    .footer-sign>a {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
 }
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
+    .logo-header h1 {
+        font-size: 16px;
+    }
+    .logo-header p {
+        font-size: 10px
+    }
+    .logo-header img {
+        height: 90px;
+    } 
     #news .card .card-icons img {
         width: 245px
+    }
+    .footer-sign>a {
+        margin: auto;
+        margin-top: 20px;
+    }
+    #footer .title-footer h6, #footer .title-footer p {
+        text-align: center;
     }
 }
 @media (max-width: 575px) {  
     #news .card .card-icons img {
         width: 415px
+    }
+    .footer-sign>a {
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }
