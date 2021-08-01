@@ -27,7 +27,7 @@
                          </span>
                     </h2>
                 </div>
-                <form>
+                <form class="d-none d-md-block">
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" class="form-control"
@@ -65,6 +65,58 @@
                             </button>
                         </div>
                         <div class="col-md-6">
+                            <button class="btn custom-btn-forget" type="submit">
+                                نسيت كلمة المرور
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <form class="d-md-none">
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="الاسم الاول" name="First_name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="الاسم الاخير" name="Last_name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="تاريخ الميلاد" name="date_birth" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <input type="email" class="form-control"
+                            placeholder="البريد الالكتروني" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="كلمة السر" name="password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <input type="text" class="form-control"
+                            placeholder="تأكيد كلمة السر" name="password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn custom-btn-signin" type="submit">
+                                تسجيل الدخول
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
                             <button class="btn custom-btn-forget" type="submit">
                                 نسيت كلمة المرور
                             </button>
