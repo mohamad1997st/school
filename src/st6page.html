@@ -8,7 +8,7 @@
     <script  type="text/html" src="{require('index.js')}"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="white-page">
         <!--بداية الترويسة-->
         <div class="row">
             <nav class="navbar custom-navbar navbar-expand-lg">
@@ -61,264 +61,197 @@
             </nav>
         </div>
         <!--نهاية الترويسة-->
-        <div id="white-page">
-            <div class="container">
-                <div class="col-12 student-detailes-one">
-                    <div class="row ">
-                        <!--قسم صور الطالب-->
-                        <div class="col-12 col-lg-5">
-                            <div class="carousel slide" id="carousel-student-one" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./images/st6-1.jpg" alt="الطالب السادس">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./images/st6-2.jpg" alt="الطالب السادس">
-                                    </div>
+        <div class="container">
+            <div class="col-12 student-detailes-one">
+                <div class="row ">
+                    <!--قسم صور الطالب-->
+                    <div class="col-12 col-lg-5">
+                        <div class="carousel slide" id="carousel-student-one" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/st6-1.jpg" alt="الطالب السادس">
                                 </div>
-                                <div class="carousel-indicators">
-                                    <img data-bs-target="#carousel-student-one" data-bs-slide-to="0" class="active" src="./images/st6-1.jpg" alt="">
-                                    <img data-bs-target="#carousel-student-one" data-bs-slide-to="1" src="./images/st6-2.jpg" alt="">
+                                <div class="carousel-item">
+                                    <img src="./images/st6-2.jpg" alt="الطالب السادس">
                                 </div>
                             </div>
-                        </div>
-                        <!--نهاية قسم صور الطالب-->
-                        <!--معلومات الطالب-->
-                        <div class="col-12 col-lg-5">
-                            <form id="form-student-detaile" class="border-between">
-                                <!--الاسم و العمر-->
-                                <div class="row">
-                                    <div class="student-primary">
-                                        <h1>معلومات الطالب</h1> 
-                                    </div>
-                                    <div class="clearfix">
-                                        <div class="name-student float-end">
-                                            حسين ماجد صوان
-                                        </div>
-                                        <div class="age-student float-start">
-                                            12 سنة
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--نهاية الاسم و العمر-->
-                                <!--الصف و المرتبة-->
-                                <div class="row class-and-position">
-                                    <div class="clearfix">
-                                        <div class="class float-end">
-                                            الصف السابع
-                                        </div>
-                                        <div class="position float-start">
-                                            المركز الاول 
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--نهاية قسم الصف و المرتبة-->
-                                <!--الهوايات-->
-                                <div class="row hobbies">
-                                    <div class="title">
-                                        الهوايات:
-                                    </div>
-                                    <div class="hobbies-options d-flex">
-                                        <div class="hobbie-option">
-                                            السباحة
-                                        </div>
-                                        <div class="hobbie-option">
-                                            الرماية
-                                        </div>
-                                        <div class="hobbie-option">
-                                            القراءة
-                                        </div>
-                                        <div class="hobbie-option">
-                                            كرة القدم
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--نهاية قسم الهوايات-->
-                                <div class="row social-icons">
-                                    <div class="title">
-                                        مواقع التواصل :
-                                    </div>
-                                    <div id="social-icons">
-                                        <a href="https://www.facebook.com">
-                                            <i class="fab fa-facebook-square fa-lg"></i>
-                                        </a>
-                                        <a href="https://www.twitter.com">
-                                            <i class="fab fa-twitter-square fa-lg"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com">
-                                            <i class="fab fa-instagram fa-lg"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!--نهاية قسم المواهب-->
-                                <!--وصف الطالب-->
-                                <div class="row">
-                                    <p class="student-description">
-                                        أنا حسن ماجد صوان و لدت في 15 مارس 2009 في مدينة بيروت، ترععرت
-                                        في كنف عائلة صغيرة مؤلفة من ثلاثة أولاد، أنا أكبرهم. 
-                                        دخلت المدرسة عندما أتمت عامي السادس و كنت من نعومة أظفاري أحب
-                                        <span id="dots">...</span><span id="more">القراءة و الكتابة و لاسيما اللغة العربية التي لطالما
-                                        تبحرت في مفرداتها أعجبت بهاأكثر ثم أكثر، و مما لاشك 
-                                        فيه أحب السباحة و كرة القدم و قراءة القصص المصورة. 
-                                        كنت شقياً جداً في صغري أحب استكشاف الأشياء
-                                        الجديدة و خاصة المتعلقة بالياريخ و الحضارات القديمة
-                                        مثل لاالحضارة الفرعونية الرومانية و غيرها الكثير.</span>
-                                    </p>
-                                    <div class="button-read">
-                                        <button id="myBtn" class="btn custom-more-read-btn" type="button">اقرأ المزيد </button>
-                                    </div>
-                                </div>
-                                <!--نهاية قسم وصف الطالب-->
-                            </form>
-                        </div>
-                        <!--نهاية قسم معلومات الطالب-->
-                    </div>
-                </div> 
-                <!--قسم جدول العلامات-->
-                <div class="row table-note">
-                    <div class="col-12 student-notes">
-                        <div class="title-heading-one">
-                            <h2>علامات الطالب</h2>
+                            <div class="carousel-indicators">
+                                <img data-bs-target="#carousel-student-one" data-bs-slide-to="0" class="active" src="./images/st6-1.jpg" alt="">
+                                <img data-bs-target="#carousel-student-one" data-bs-slide-to="1" src="./images/st6-2.jpg" alt="">
+                            </div>
                         </div>
                     </div>
-                    <table class="table custom-table">
-                        <thead class="custom-thead">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">إسم المادة</th>
-                                <th scope="col">الفصل الدراسي</th>
-                                <th scope="col">العلامة</th>
-                            </tr>
-                        </thead>
-                        <tbody class="custom-body">
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>اللغة العربية</td>
-                                <td>الفصل الدراسي الأول</td>
-                                <td class="note">78</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>الرياضيات</td>
-                                <td>الفصل الدراسي الأول</td>
-                                <td class="note">90</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>اللغة الاجنبية</td>
-                                <td>الفصل الدراسي الأول</td>
-                                <td class="note">82</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>العلوم</td>
-                                <td>الفصل الدراسي الأول</td>
-                                <td class="note">86</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>التاريخ</td>
-                                <td>الفصل الدراسي الأول</td>
-                                <td class="note">94</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>فيزياء</td>
-                                <td>الفصل الدراسي الأول</td>
-                                <td class="note">79</td>
-                            </tr>
-                        </tbody>
-                        <tfooter class="custom-tfooter">
-                            <tr>
-                                <th>المجوع العام</th>
-                                <td></td>
-                                <td></td>
-                                <td class="general-note" colspan="3">279</td>
-                            </tr>
-                        </tfooter>
-                    </table>
+                    <!--نهاية قسم صور الطالب-->
+                    <!--معلومات الطالب-->
+                    <div class="col-12 col-lg-5">
+                        <form id="form-student-detaile" class="border-between">
+                            <!--الاسم و العمر-->
+                            <div class="row">
+                                <div class="student-primary">
+                                    <h1>معلومات الطالب</h1> 
+                                </div>
+                                <div class="clearfix">
+                                    <div class="name-student float-end">
+                                        حسين ماجد صوان
+                                    </div>
+                                    <div class="age-student float-start">
+                                        12 سنة
+                                    </div>
+                                </div>
+                            </div>
+                            <!--نهاية الاسم و العمر-->
+                            <!--الصف و المرتبة-->
+                            <div class="row class-and-position">
+                                <div class="clearfix">
+                                    <div class="class float-end">
+                                        الصف السابع
+                                    </div>
+                                    <div class="position float-start">
+                                        المركز الاول 
+                                    </div>
+                                </div>
+                            </div>
+                            <!--نهاية قسم الصف و المرتبة-->
+                            <!--الهوايات-->
+                            <div class="row hobbies">
+                                <div class="title">
+                                    الهوايات:
+                                </div>
+                                <div class="hobbies-options d-flex">
+                                    <div class="hobbie-option">
+                                        السباحة
+                                    </div>
+                                    <div class="hobbie-option">
+                                        الرماية
+                                    </div>
+                                    <div class="hobbie-option">
+                                        القراءة
+                                    </div>
+                                    <div class="hobbie-option">
+                                        كرة القدم
+                                    </div>
+                                </div>
+                            </div>
+                            <!--نهاية قسم الهوايات-->
+                            <div class="row social-icons">
+                                <div class="title">
+                                    مواقع التواصل :
+                                </div>
+                                <div id="social-icons">
+                                    <a href="https://www.facebook.com">
+                                        <i class="fab fa-facebook-square fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.twitter.com">
+                                        <i class="fab fa-twitter-square fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com">
+                                        <i class="fab fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--نهاية قسم المواهب-->
+                            <!--وصف الطالب-->
+                            <div class="row">
+                                <p class="student-description">
+                                    أنا حسن ماجد صوان و لدت في 15 مارس 2009 في مدينة بيروت، ترععرت
+                                    في كنف عائلة صغيرة مؤلفة من ثلاثة أولاد، أنا أكبرهم. 
+                                    دخلت المدرسة عندما أتمت عامي السادس و كنت من نعومة أظفاري أحب
+                                    <span id="dots">...</span><span id="more">القراءة و الكتابة و لاسيما اللغة العربية التي لطالما
+                                    تبحرت في مفرداتها أعجبت بهاأكثر ثم أكثر، و مما لاشك 
+                                    فيه أحب السباحة و كرة القدم و قراءة القصص المصورة. 
+                                    كنت شقياً جداً في صغري أحب استكشاف الأشياء
+                                    الجديدة و خاصة المتعلقة بالياريخ و الحضارات القديمة
+                                    مثل لاالحضارة الفرعونية الرومانية و غيرها الكثير.</span>
+                                </p>
+                                <div class="button-read">
+                                    <button id="myBtn" class="btn custom-more-read-btn" type="button">اقرأ المزيد </button>
+                                </div>
+                            </div>
+                            <!--نهاية قسم وصف الطالب-->
+                        </form>
+                    </div>
+                    <!--نهاية قسم معلومات الطالب-->
                 </div>
-                <!--نهاية قسم جدول العلامات-->
+            </div> 
+            <!--قسم جدول العلامات-->
+            <div class="row table-note">
+                <div class="col-12 student-notes">
+                    <div class="title-heading-one">
+                        <h2>علامات الطالب</h2>
+                    </div>
+                </div>
+                <table class="table custom-table">
+                    <thead class="custom-thead">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">إسم المادة</th>
+                            <th scope="col">الفصل الدراسي</th>
+                            <th scope="col">العلامة</th>
+                        </tr>
+                    </thead>
+                    <tbody class="custom-body">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>اللغة العربية</td>
+                            <td>الفصل الدراسي الأول</td>
+                            <td class="note">78</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>الرياضيات</td>
+                            <td>الفصل الدراسي الأول</td>
+                            <td class="note">90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>اللغة الاجنبية</td>
+                            <td>الفصل الدراسي الأول</td>
+                            <td class="note">82</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>العلوم</td>
+                            <td>الفصل الدراسي الأول</td>
+                            <td class="note">86</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>التاريخ</td>
+                            <td>الفصل الدراسي الأول</td>
+                            <td class="note">94</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>فيزياء</td>
+                            <td>الفصل الدراسي الأول</td>
+                            <td class="note">79</td>
+                        </tr>
+                    </tbody>
+                    <tfooter class="custom-tfooter">
+                        <tr>
+                            <th>المجوع العام</th>
+                            <td></td>
+                            <td></td>
+                            <td class="general-note" colspan="3">279</td>
+                        </tr>
+                    </tfooter>
+                </table>
             </div>
-            <!--قسم كيف تصبح متفوقاً-->
-            <div class="features">
-                <div class="title-heading-one">
-                    <h2>كيف تصبح متفوق؟</h2>
-                </div>
-                <div class="container d-none d-lg-block">
-                    <div class="feature">
-                        <div class="card">
-                            <div class="card-horizontale d-flex">
-                                <div class="card-icon">
-                                    <img src="./images/feature1.jpg" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5>التحضير للمادة قبل حضور الفصل الدراسي</h5>
-                                    <p>
-                                        يمكن للطالبة 
-                                        أن تصبح أكثر تفوقاً في دراستها من خلال التحضير للمواد قبل القدوم إلى الفصل
-                                        الدراسي، والتأكد من إحضار جميع الأدوات التي ستحتاج إليها خلال هذا الفصل
-                                        الدراسي، حيث أن القيام بذلك سيعطيها فكرةً حول الأمور التي سيتطرق إليها
-                                        المعلم خلال الفصل الدراسي، مما يساعدها على فهم المواد بشكل أفضل،
-                                        وذلك لأنها قد لا تفهم المادة على النحو المطلوب عند تلقيها لأول مرة،
-                                        كما أنها إن اضطرت للتخلف عن حضور أحد الفصول الدراسية فستكون
-                                        على معرفةٍ بجميع الأمور التي تم تداولها خلال هذا الفصل الدراسي
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="feature ">
-                        <div class="card">
-                            <div class="card-horizontale d-flex">
-                                <div class="card-body">
-                                    <h5>تنظيم الحياة اليومية</h5>
-                                    <p>
-                                        يمكن للفتاة التفوق في دراستها من خلال تنظيم حياتها اليومية
-                                        ، ويمكن الاستعانة بمخطط ورقي للقيام بذلك، بحيث تقوم بإعداد تقويم فردي،
-                                        وتضمينه لجميع المعلومات الخاصة بالفصل الدراسي كواجبات القراءة، ومواعيد
-                                        الامتحانات، والمشاريع المطلوب إنجازها، كما يجب تضمينه لجميع الأحداث
-                                        والمواعيد النهائية الشخصية، أو الخاصة بالعمل، حيث أن القيام
-                                        بذلك سيساعدها على تجميع جميع الأمور التي يجب عليها القيام
-                                        بها في مكان واحد، مما يساعدها على تسهيل حياتها بشكل كبير.
-                                    </p>
-                                </div>
-                                <div class="card-icon">
-                                    <img src="./images/feature2.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feature ">
-                        <div class="card">
-                            <div class="card-horizontale d-flex">
-                                <div class="card-icon">
-                                    <img src="./images/feature3.jpg" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5>الاستعداد الفطري للتفوق الدراسي</h5>
-                                    <p>
-                                        يعدّ استعداد الشخص
-                                        الفطري أمراً مهماً من أجل تحقيق تفوّقه في مجال دراسته، فالتفوّق مطلب كل
-                                        إنسان، ويتمّ تحقيق هذا التفوق عندما يتواجد الأمل، والعزيمة عند الشخص 
-                                        الذي يمتلك المواهب، وفي مقابل المتفوقين يوجد مجموعة من الأشخاص الذين 
-                                        يعتبرون مجتمعيّاً فاشلين، لكونهم ينظرون إلى الدراسة على أنّها كابوس
-                                        مزعج، ويحاولون الهرب منه، وحتّى يتمكن هؤلاء الأشخاص من التغلّب
-                                        على هذا الكابوس يجب عليهم القيام بالعديد من خطوات النجاح
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container d-lg-none">
-                    <div class="feature">
-                        <div class="card">
-                            <div class="card-icon text-center">
+            <!--نهاية قسم جدول العلامات-->
+        </div>
+        <!--قسم كيف تصبح متفوقاً-->
+        <div class="features">
+            <div class="title-heading-one">
+                <h2>كيف تصبح متفوق؟</h2>
+            </div>
+            <div class="container d-none d-lg-block">
+                <div class="feature">
+                    <div class="card">
+                        <div class="card-horizontale d-flex">
+                            <div class="card-icon">
                                 <img src="./images/feature1.jpg" alt="">
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body">
                                 <h5>التحضير للمادة قبل حضور الفصل الدراسي</h5>
                                 <p>
                                     يمكن للطالبة 
@@ -332,13 +265,13 @@
                                 </p>
                             </div>
                         </div>
+                        
                     </div>
-                    <div class="feature">
-                        <div class="card">
-                            <div class="card-icon text-center">
-                                <img src="./images/feature2.jpg" alt="">
-                            </div>
-                            <div class="card-body text-center">
+                </div>
+                <div class="feature ">
+                    <div class="card">
+                        <div class="card-horizontale d-flex">
+                            <div class="card-body">
                                 <h5>تنظيم الحياة اليومية</h5>
                                 <p>
                                     يمكن للفتاة التفوق في دراستها من خلال تنظيم حياتها اليومية
@@ -350,14 +283,19 @@
                                     بها في مكان واحد، مما يساعدها على تسهيل حياتها بشكل كبير.
                                 </p>
                             </div>
+                            <div class="card-icon">
+                                <img src="./images/feature2.jpg" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="feature">
-                        <div class="card">
-                            <div class="card-icon text-center">
+                </div>
+                <div class="feature ">
+                    <div class="card">
+                        <div class="card-horizontale d-flex">
+                            <div class="card-icon">
                                 <img src="./images/feature3.jpg" alt="">
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body">
                                 <h5>الاستعداد الفطري للتفوق الدراسي</h5>
                                 <p>
                                     يعدّ استعداد الشخص
@@ -373,95 +311,156 @@
                     </div>
                 </div>
             </div>
-            <!--نهاية قسم كيف تصبح متفوقاً-->
-            <!--إقترحنا لك-->
-            <div class="suggestions">
-                <div class="title-heading-one">
-                    <h2>إقترحنا لك</h2>
+            <div class="container d-lg-none">
+                <div class="feature">
+                    <div class="card">
+                        <div class="card-icon text-center">
+                            <img src="./images/feature1.jpg" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5>التحضير للمادة قبل حضور الفصل الدراسي</h5>
+                            <p>
+                                يمكن للطالبة 
+                                أن تصبح أكثر تفوقاً في دراستها من خلال التحضير للمواد قبل القدوم إلى الفصل
+                                الدراسي، والتأكد من إحضار جميع الأدوات التي ستحتاج إليها خلال هذا الفصل
+                                الدراسي، حيث أن القيام بذلك سيعطيها فكرةً حول الأمور التي سيتطرق إليها
+                                المعلم خلال الفصل الدراسي، مما يساعدها على فهم المواد بشكل أفضل،
+                                وذلك لأنها قد لا تفهم المادة على النحو المطلوب عند تلقيها لأول مرة،
+                                كما أنها إن اضطرت للتخلف عن حضور أحد الفصول الدراسية فستكون
+                                على معرفةٍ بجميع الأمور التي تم تداولها خلال هذا الفصل الدراسي
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4">
-                            <div class="card">
-                                <div class="card-icons">
-                                    <img src="./images/st7.jpg" alt="الطالب الأول">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">مريم طارق خزعل</h5>
-                                    <p class="card-text">
-                                        <small>
-                                            <i class="fas fa-graduation-cap read-icon"></i>
-                                            <span>المرتبة الثانية</span>
-                                        </small>
-                                    </p>
-                                    <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
-                                        <i class="fas fa-book-open"></i>
-                                    </a>
-                                </div>
+                <div class="feature">
+                    <div class="card">
+                        <div class="card-icon text-center">
+                            <img src="./images/feature2.jpg" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5>تنظيم الحياة اليومية</h5>
+                            <p>
+                                يمكن للفتاة التفوق في دراستها من خلال تنظيم حياتها اليومية
+                                ، ويمكن الاستعانة بمخطط ورقي للقيام بذلك، بحيث تقوم بإعداد تقويم فردي،
+                                وتضمينه لجميع المعلومات الخاصة بالفصل الدراسي كواجبات القراءة، ومواعيد
+                                الامتحانات، والمشاريع المطلوب إنجازها، كما يجب تضمينه لجميع الأحداث
+                                والمواعيد النهائية الشخصية، أو الخاصة بالعمل، حيث أن القيام
+                                بذلك سيساعدها على تجميع جميع الأمور التي يجب عليها القيام
+                                بها في مكان واحد، مما يساعدها على تسهيل حياتها بشكل كبير.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="card">
+                        <div class="card-icon text-center">
+                            <img src="./images/feature3.jpg" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5>الاستعداد الفطري للتفوق الدراسي</h5>
+                            <p>
+                                يعدّ استعداد الشخص
+                                الفطري أمراً مهماً من أجل تحقيق تفوّقه في مجال دراسته، فالتفوّق مطلب كل
+                                إنسان، ويتمّ تحقيق هذا التفوق عندما يتواجد الأمل، والعزيمة عند الشخص 
+                                الذي يمتلك المواهب، وفي مقابل المتفوقين يوجد مجموعة من الأشخاص الذين 
+                                يعتبرون مجتمعيّاً فاشلين، لكونهم ينظرون إلى الدراسة على أنّها كابوس
+                                مزعج، ويحاولون الهرب منه، وحتّى يتمكن هؤلاء الأشخاص من التغلّب
+                                على هذا الكابوس يجب عليهم القيام بالعديد من خطوات النجاح
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--نهاية قسم كيف تصبح متفوقاً-->
+        <!--إقترحنا لك-->
+        <div class="suggestions">
+            <div class="title-heading-one">
+                <h2>إقترحنا لك</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card">
+                            <div class="card-icons">
+                                <img src="./images/st7.jpg" alt="الطالب الأول">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">مريم طارق خزعل</h5>
+                                <p class="card-text">
+                                    <small>
+                                        <i class="fas fa-graduation-cap read-icon"></i>
+                                        <span>المرتبة الثانية</span>
+                                    </small>
+                                </p>
+                                <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
+                                    <i class="fas fa-book-open"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="card">
-                                <div class="card-icons">
-                                    <img src="./images/st4.jpg" alt="الطالب الأول">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">مريم طارق خزعل</h5>
-                                    <p class="card-text">
-                                        <small>
-                                            <i class="fas fa-graduation-cap read-icon"></i>
-                                            <span>المرتبة الثانية</span>
-                                        </small>
-                                    </p>
-                                    <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
-                                        <i class="fas fa-book-open"></i>
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card">
+                            <div class="card-icons">
+                                <img src="./images/st4.jpg" alt="الطالب الأول">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">مريم طارق خزعل</h5>
+                                <p class="card-text">
+                                    <small>
+                                        <i class="fas fa-graduation-cap read-icon"></i>
+                                        <span>المرتبة الثانية</span>
+                                    </small>
+                                </p>
+                                <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
+                                    <i class="fas fa-book-open"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="card">
-                                <div class="card-icons">
-                                    <img src="./images/st5.jpg" alt="الطالب الأول">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">مريم طارق خزعل</h5>
-                                    <p class="card-text">
-                                        <small>
-                                            <i class="fas fa-graduation-cap read-icon"></i>
-                                            <span>المرتبة الثانية</span>
-                                        </small>
-                                    </p>
-                                    <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
-                                        <i class="fas fa-book-open"></i>
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card">
+                            <div class="card-icons">
+                                <img src="./images/st5.jpg" alt="الطالب الأول">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">مريم طارق خزعل</h5>
+                                <p class="card-text">
+                                    <small>
+                                        <i class="fas fa-graduation-cap read-icon"></i>
+                                        <span>المرتبة الثانية</span>
+                                    </small>
+                                </p>
+                                <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
+                                    <i class="fas fa-book-open"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="card">
-                                <div class="card-icons">
-                                    <img src="./images/st1.jpg" alt="الطالب الأول">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">مريم طارق خزعل</h5>
-                                    <p class="card-text">
-                                        <small>
-                                            <i class="fas fa-graduation-cap read-icon"></i>
-                                            <span>المرتبة الثانية</span>
-                                        </small>
-                                    </p>
-                                    <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
-                                        <i class="fas fa-book-open"></i>
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="card">
+                            <div class="card-icons">
+                                <img src="./images/st1.jpg" alt="الطالب الأول">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">مريم طارق خزعل</h5>
+                                <p class="card-text">
+                                    <small>
+                                        <i class="fas fa-graduation-cap read-icon"></i>
+                                        <span>المرتبة الثانية</span>
+                                    </small>
+                                </p>
+                                <a href="st7page.html" class="btn btn-secondary custom-student-btn-detailes">معلومات الطالب
+                                    <i class="fas fa-book-open"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--نهاية قسم إقترحنا لك-->
         </div>
+        <!--نهاية قسم إقترحنا لك-->
+        
     </div>
     <!--بداية قسم تذييل الصفحة-->
     <div id="footer">

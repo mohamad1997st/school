@@ -11,7 +11,8 @@ module.exports = {
 
     output: {
         path: path.join(__dirname, "/dist"),
-        filename: "main.js"
+        filename: "main.js",
+        publicPath: ""
     },
 
     mode: "development",
@@ -51,35 +52,37 @@ module.exports = {
             },
 
             {
-                test:/\.css$/,
+                test: /\.css$/,
                 use: [
-                    
-                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                        }
+                    },
                     'css-loader',
                 ]
             },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                  "style-loader",
+                  "css-loader",
+                  "sass-loader",
+                ],
+              },
 
             /*{
                 test: /\.(png|jpe?g|gif|svg)$/,
-                loader: "file-loader",
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: "/images",
-                },
-            },*/
-
-            /*{
-                test: /\.(gif|png|jpe?g|svg)$/,
                 use: [
-                    'file-loader',
                     {
-                        loader: 'image-webpack-loader',
+                        loader: "file-loader",
                         options: {
-                            disable: true,
-                            name: '[name].[ext]'
-                        }
+                            name: '[name].[ext]',
+                            outputPath: "images/",
+                        },
                     }
-                ]
+                ]  
             },*/
 
             /*{

@@ -1,0 +1,209 @@
+@import './variable';
+@import './logo-header';
+
+
+#footer .news-letters .custom-btn {
+    color: #ffffff;
+    background-color: $brand-primary;
+    border-radius: 0;
+    margin-right: 5px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $btn-primary-color-dark;
+        font-weight:700;
+    }
+}
+.custom-navbar .search-btn{
+    border-radius: 0;
+    background-color: $brand-primary;
+    margin-right: 5px;
+    color: #ffffff;
+    font-weight: 600;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    *:active:focus {
+        background-color: $btn-primary-color-dark;
+    }
+}
+#carousel-featured .custom-more-read-btn {
+    position: absolute;
+    right: 40%;
+    top: 180px;
+    color: #ffffff;
+    background-color: $brand-primary;
+    border-radius: 0;
+    font-size: 16px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $btn-primary-color-dark;
+        font-weight: 700;
+    }
+}
+.overlay .custom-btn-signin {
+    border-radius: 0;
+    background-color: $brand-primary;
+    color: #fff;
+    box-shadow: none;
+    width: 100%;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $btn-primary-color-dark;
+        font-weight: 700;
+    }  
+}
+.custom-more-read-btn {
+    float: right;
+    color: #ffffff;
+    background-color: $brand-primary;
+    border-radius: 0;
+    font-size: 16px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $btn-primary-color-dark;
+        font-weight: 700;
+    }
+}
+.contact-detailes .form-group .send-btn {
+    background-color: $brand-primary;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $btn-primary-color-dark;
+        font-weight: 700;
+    }  
+}
+
+
+
+.navbar-nav li.nav-item.active .nav-link:hover,
+.navbar-nav li.nav-item.active .nav-link:focus,
+.navbar-nav li.nav-item.active .nav-link:active,
+.navbar-nav li.nav-item.active .nav-link:active:focus,
+.navbar-nav li.nav-item.active .nav-link:active:hover {
+    background-color: $brand-primary;
+    color: #ffffff;
+}
+#students-items .custom-carousel-indicators>li.active{
+    background-color: $btn-primary-color-dark;
+}
+
+.custom-student-btn-detailes {
+    background-color: #ffffff;
+    color: $brand-primary;
+    border-color: #ffffff;
+}
+#footer .title-footer p span a:hover,
+#footer .title-footer p span a:focus,
+#footer .title-footer p span a:active,
+#footer .title-footer p span a:active:focus,
+#footer .title-footer p span a:active:hover {
+    color: $brand-primary;
+}
+#school-detailes .list-group-item.active {
+    background-color: $brand-primary;
+    border-color: $brand-primary
+}
+.contact-detailes .form-group .cancel-btn:hover,
+.contact-detailes .form-group .cancel-btn:focus,
+.contact-detailes .form-group .cancel-btn:active,
+.contact-detailes .form-group .cancel-btn:active:hover,
+.contact-detailes .form-group .cancel-btn:active:focus {
+    background-color: $brand-primary;
+}
+.title-question .signup-question-btn:hover,
+.title-question .signup-question-btn:focus,
+.title-question .signup-question-btn:active,
+.title-question .signup-question-btn:active:hover,
+.title-question .signup-question-btn:active:focus {
+    color: $brand-primary;
+    font-weight:800;
+}
+
+.custom-btn-forget:hover,
+.custom-btn-forget:focus,
+.custom-btn-forget:active,
+.custom-btn-forget:active:hover,
+.custom-btn-forget:active:active {
+    color: #fff;
+    background-color: $brand-primary;
+}
+.age-student{
+    color: $brand-primary;
+    font-weight: 500;
+}
+.title-heading-one:after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 2px;
+    background-color: $brand-primary;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#students-items .card .card-body p span {
+    color: $brand-warning;
+    font-weight: 700;
+    margin-right: 5px;
+}
+#smart-students .card .card-body p span {
+    color: $brand-warning;
+    font-weight: 600;
+    margin-right: 5px;
+}
+#footer .footer-nav-links a:hover {
+    color: $brand-warning;
+}
+#footer .footer-sign a span:hover,
+#footer .footer-sign a span:focus,
+#footer .footer-sign a span:active,
+#footer .footer-sign a span:active:hover,
+#footer .footer-sign a span:active:focus {
+    color: $brand-warning;
+    font-weight:600;
+}
+.custom-contact-list .icon {
+    font-size: 18px;
+    color: $brand-warning;
+}
+.class-and-position .position {
+    float: left;
+    font-weight: 600;
+    padding: 10px 5px;
+    color: $brand-warning;
+}
+.social-icons a:hover {
+    color: $brand-warning;
+}
+.table .custom-thead {
+    background-color: $brand-warning;
+    color: #fff
+}
+.suggestions .card .card-body p span {
+    color: $brand-warning;
+    font-weight: 600;
+    margin-right: 5px;
+}

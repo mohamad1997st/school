@@ -1,6 +1,7 @@
+import './scss/style.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import './css/style.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min';
 import '@popperjs/core/dist/umd/popper.min';
