@@ -1,0 +1,21 @@
+@mixin fill-color($color) {
+    float: left;
+    font-weight: 600;
+    padding: 10px 5px;
+    color: $color;
+}
+@mixin icon-style($hover-color) {
+    color: $hover-color;
+}
+
+@mixin hobbies-style($fill-color) {
+    color: #fff;
+    background-color: $fill-color;
+    border-color:$fill-color;
+    font-weight: 700;
+    
+}
+@mixin button-style($color-font, $color-bg) {
+    color:$color-font;
+    background-color: $color-bg;
+}

@@ -1,5 +1,8 @@
 @import './variable';
 @import './logo-header';
+@import './mixins';
+@import './features.scss';
+@import './suggestions';
 
 
 #footer .news-letters .custom-btn {
@@ -28,7 +31,7 @@
     &:focus,
     &:active,
     &:active:hover,
-    *:active:focus {
+    &:active:focus {
         background-color: $btn-primary-color-dark;
     }
 }
@@ -95,16 +98,72 @@
         font-weight: 700;
     }  
 }
+#footer .title-footer p span a {
 
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: $brand-primary;
+    }
+}
 
+.contact-detailes .form-group .cancel-btn {
 
-.navbar-nav li.nav-item.active .nav-link:hover,
-.navbar-nav li.nav-item.active .nav-link:focus,
-.navbar-nav li.nav-item.active .nav-link:active,
-.navbar-nav li.nav-item.active .nav-link:active:focus,
-.navbar-nav li.nav-item.active .nav-link:active:hover {
-    background-color: $brand-primary;
-    color: #ffffff;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $brand-primary;
+    }
+}
+.navbar-nav li.nav-item.active .nav-link {
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $brand-primary;
+        color: #ffffff;
+    }
+}
+.title-question .signup-question-btn {
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: $brand-primary;
+        font-weight:800;
+    }
+}
+#footer .footer-sign a span {
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: $brand-warning;
+        font-weight:600;
+    }
+
+}
+.custom-btn-forget {
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+
+        color: #fff;
+        background-color: $brand-primary;
+    }
 }
 #students-items .custom-carousel-indicators>li.active{
     background-color: $btn-primary-color-dark;
@@ -115,40 +174,9 @@
     color: $brand-primary;
     border-color: #ffffff;
 }
-#footer .title-footer p span a:hover,
-#footer .title-footer p span a:focus,
-#footer .title-footer p span a:active,
-#footer .title-footer p span a:active:focus,
-#footer .title-footer p span a:active:hover {
-    color: $brand-primary;
-}
 #school-detailes .list-group-item.active {
     background-color: $brand-primary;
     border-color: $brand-primary
-}
-.contact-detailes .form-group .cancel-btn:hover,
-.contact-detailes .form-group .cancel-btn:focus,
-.contact-detailes .form-group .cancel-btn:active,
-.contact-detailes .form-group .cancel-btn:active:hover,
-.contact-detailes .form-group .cancel-btn:active:focus {
-    background-color: $brand-primary;
-}
-.title-question .signup-question-btn:hover,
-.title-question .signup-question-btn:focus,
-.title-question .signup-question-btn:active,
-.title-question .signup-question-btn:active:hover,
-.title-question .signup-question-btn:active:focus {
-    color: $brand-primary;
-    font-weight:800;
-}
-
-.custom-btn-forget:hover,
-.custom-btn-forget:focus,
-.custom-btn-forget:active,
-.custom-btn-forget:active:hover,
-.custom-btn-forget:active:active {
-    color: #fff;
-    background-color: $brand-primary;
 }
 .age-student{
     color: $brand-primary;
@@ -177,26 +205,27 @@
 #footer .footer-nav-links a:hover {
     color: $brand-warning;
 }
-#footer .footer-sign a span:hover,
-#footer .footer-sign a span:focus,
-#footer .footer-sign a span:active,
-#footer .footer-sign a span:active:hover,
-#footer .footer-sign a span:active:focus {
-    color: $brand-warning;
-    font-weight:600;
-}
 .custom-contact-list .icon {
     font-size: 18px;
     color: $brand-warning;
 }
-.class-and-position .position {
-    float: left;
-    font-weight: 600;
-    padding: 10px 5px;
-    color: $brand-warning;
+.hobbies-options .hobbie-option:hover {
+    @include hobbies-style($brand-warning)
 }
-.social-icons a:hover {
-    color: $brand-warning;
+.student-detailes-two .hobbies-options .hobbie-option:hover {
+    @include hobbies-style($brand-danger)
+}
+.class-and-position .position {
+   @include fill-color($brand-warning)
+}
+.student-detailes-two .class-and-position .position {
+    @include fill-color($brand-danger)
+}
+.social-icons a:hover{
+   @include icon-style($brand-warning)
+}
+.student-detailes-two .social-icons a:hover {
+    @include icon-style($brand-danger)
 }
 .table .custom-thead {
     background-color: $brand-warning;
@@ -206,4 +235,14 @@
     color: $brand-warning;
     font-weight: 600;
     margin-right: 5px;
+}
+.suggestions .custom-student-btn-detailes:hover {
+    background-color: $brand-warning;
+    border-color: $brand-warning;
+    color:#fff;
+    font-weight: 700;
+}
+.suggestions .card:hover {
+    border-color: $brand-warning;
+    box-shadow: 0 0 15px $brand-warning;
 }

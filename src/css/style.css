@@ -101,17 +101,18 @@ body {
 
 }
 #activities-items .card {
-    height: 200px;
+    height: calc(100%-16px);
     width: 100%;
     margin-right: 0;
     border: 2px solid #d4d4d4;
 }
+
 #activities-items .card:hover {
     border: 2px solid #45b5b7;
 }
-.card .card-icons img {
+#activities-items .card .card-icons img {
     width: 300px;
-    height: 200px;
+    height: 250px;
     padding: 10px;
 }
 #activities-items .card .card-body h4.card-title {
@@ -147,6 +148,7 @@ body {
 #students-items .card .card-icons img {
     height: 200px;
     width: 100%;
+    padding: 10px
 }
 #students-items .card .card-body h5 {
     font-size: 18px;
@@ -204,6 +206,7 @@ body {
 #smart-students .card .card-icons img {
     height: 350px;
     width: 100%;
+    padding: 10px;
 }
 #smart-students .card .card-body h5 {
     font-size: 35px;
@@ -308,10 +311,11 @@ body {
 }
 
 /*********************************
-**********************************
-******* aboutus Page *************     
-**********************************
+************
+ABOUTUS PAGE
+************    
 *********************************/
+
 #aboutus-page .container {
     padding: 0
 }
@@ -432,6 +436,7 @@ body {
 }
 #news .card .card-icons img {
     width: 240px;
+    padding: 10px;
 }
 #news .card .card-icons small {
     margin:10px;
@@ -448,8 +453,8 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     color: #000;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 15px;
 }
 /**************************
 ***************************
@@ -670,27 +675,32 @@ STUDENT PAGE
 ************
 ****************************/
 
-#carousel-student-one {
+#carousel-student-one,
+#carousel-student-two {
     position: relative;
 }
-#carousel-student-one .carousel-inner img {
+#carousel-student-one .carousel-inner img,
+#carousel-student-two .carousel-inner img {
     height: 550px;
     padding: 15px 15px;
     margin-top: 15px;
 }
-#carousel-student-one .carousel-indicators {
+#carousel-student-one .carousel-indicators,
+#carousel-student-two .carousel-indicators {
     position: relative;
     right: -30px;
     top: -70px;
 }
-#carousel-student-one .carousel-indicators img {
+#carousel-student-one .carousel-indicators img,
+#carousel-student-two .carousel-indicators img {
     height: 90px;
     width: 70px;
     margin-left: 10px;
     border: 4px solid #dbdbdb;
 }
-#carousel-student-one .carousel-indicators img.active{
-    border: 4px solid #45b5b7;
+#carousel-student-one .carousel-indicators img.active, 
+#carousel-student-two .carousel-indicators img.active {
+    border-color: #45b5b7;
 }
 .student-primary {
     margin-top: 35px;
@@ -750,12 +760,6 @@ STUDENT PAGE
     width: 100%;
     text-align: center;
 }
-.hobbies-options .hobbie-option:hover {
-    color: #fff;
-    background-color: #f8ad47;
-    border: 1px solid #f8ad47;
-    font-weight: 700;
-}
 .social-icons {
     padding: 10px 5px;
     border-bottom: 1px solid #dbdbdb;
@@ -797,83 +801,11 @@ STUDENT PAGE
 #white-page {
     background-color: #fff;
 }
-.features {
-    padding: 35px 0;
-}
 .title-heading-one {
     position: relative;
     margin-bottom: 35px;
     padding-bottom: 30px;
     text-align: center;
-}
-.features .feature .card {
-    border: 0;
-}
-.features .feature {
-    padding: 50px 0;
-    border-bottom: 3px solid #dbdbdb;
-}
-.features .feature .card .card-body h5 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #45b5b7;
-    border-right: 2px solid #45b5b7;
-    padding: 0 20px;
-    margin-bottom: 50px;
-}
-.features .feature .card .card-body p {
-    font-size: 18px;
-    line-height: 32px;
-    color: #555555;
-}
-.features .feature .card .card-icon img {
-    margin: 0 4rem;
-}
-.features .feature .card .card-body {
-    margin-top: 50px
-}
-.features .feature:nth-of-type(even) {
-    text-align: left;
-}
-.features .feature:nth-of-type(even) .card .card-body h5 {
-    border-right: 0px;
-    border-left: 2px solid #45b5b7;
-}
-.suggestions {
-    padding: 30px 0;
-
-}
-.suggestions .card {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #dbdbdb;
-}
-.suggestions .card:hover {
-    border: 2px solid #f8ad47;
-    box-shadow: 0 0 15px #f8ad47;
-}
-.suggestions .card .card-icons img {
-    height: 100%;
-    width: 100%
-}
-.suggestions .custom-student-btn-detailes {
-    border: 1px solid #dbdbdb;
-    border-radius: 0;
-    color: #000;
-}
-.suggestions .custom-student-btn-detailes:hover {
-    background-color: #f8ad47;
-    border: 1px solid #f8ad47;
-    color:#fff;
-    font-weight: 700;
-}
-.suggestions .card .card-body h5 {
-    font-size: 20px;
-    font-weight: 800;
-}
-.suggestions .card .card-body p {
-    font-size: 16px;
-    color: #555555;
 }
 /***************************
 ************
@@ -882,17 +814,6 @@ MEDIA QIERY
 ****************************/
 
 @media (max-width: 1199px) {
-    .logo-header h1 {
-        font-size: 25px;
-    }
-    .logo-header p {
-        font-size: 18px;
-        line-height: 20px;
-    }
-    .logo-header img {
-        height: 100px;
-        right: 50%;
-    }
     .custom-body-items{
         background-color: #f8f8f8;
         box-shadow: none;
@@ -907,8 +828,15 @@ MEDIA QIERY
     .custom-more-read-btn {
         margin-top: 10px;
     }
+    #activities-items .card .card-icons img {
+        height: 150px;
+        width: 150px;
+    }
     #activities-items .card .card-body h4.card-title {
         font-size: 18px;
+    }
+    #activities-items .card .text-muted {
+        display: flex;
     }
     #students-items .carousel-inner {
         margin-right: 0px;
@@ -982,9 +910,6 @@ MEDIA QIERY
         background-color: transparent;
         font-size: 18px;
     }
-    #activities-items .card-body:nth-child(odd) {
-        text-align: left;
-    }
     #news .card .card-icons img {
         width: 335px
     }
@@ -1026,31 +951,33 @@ MEDIA QIERY
     STUDENT PAGE
     **************
     ***************************/
-    #carousel-student-one .carousel-inner{
-        right: 150px
-    }
-    .features .feature .card .card-body h5 {
-        border-right: 0;
-    }
-    .features .feature:nth-of-type(even) .card .card-body h5 {
-        border-left: 0;
-    }
 
 }
 @media (max-width: 767px) {
-    .logo-header h1 {
-        font-size: 16px;
+    #activities-items .card .card-body h4.card-title {
+        font-size: 14px;
     }
-    .logo-header p {
-        font-size: 10px
+    #activities-items .card .card-body p.card-text {
+        font-size: 12px;
     }
-    .logo-header img {
-        height: 90px;
-        position: absolute;
-        right: 300px
+    #activities-items .card {
+        height: calc(100%-16px);
+        width: 80%;
+        margin:0 auto;
+        justify-content: center;
+    }
+    #students-items .card {
+        height: 100%; 
+        width: 254px;
+        margin:0 auto;
+        justify-self: center;
+    }
+    #students-items .card .card-icons img {
+        height: 250px;
+        width: 250px;
     }
     #news .card .card-icons img {
-        width: 245px
+        width: 245px;
     }
     .footer-sign>a {
         margin-left: 5px;
@@ -1091,6 +1018,12 @@ MEDIA QIERY
     .logo-header{
         display: none;
     }
+    #activities-items .card {
+        height: calc(100%-16px);
+        width: 50%;
+        margin:0 auto;
+        justify-content: center;
+    }
     #news .card .card-icons img {
         width: 415px
     }
@@ -1127,4 +1060,12 @@ MEDIA QIERY
         padding: 15px;
     }
     
+}
+@media (max-width: 400px) {
+    #activities-items .card {
+        height: calc(100%-16px);
+        width: 70%;
+        margin:0 auto;
+        justify-content: center;
+    }
 }
