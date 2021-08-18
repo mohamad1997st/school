@@ -19,3 +19,11 @@
     color:$color-font;
     background-color: $color-bg;
 }
+@mixin title-style($color-title) {
+    font-size: 36px;
+    font-weight: bold;
+    color: $color-title;
+    border-right: 2px solid $color-title;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}

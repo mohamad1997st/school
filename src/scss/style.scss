@@ -227,22 +227,41 @@
 .student-detailes-two .social-icons a:hover {
     @include icon-style($brand-danger)
 }
-.table .custom-thead {
+.table .custom-thead-one {
     background-color: $brand-warning;
     color: #fff
 }
-.suggestions .card .card-body p span {
-    color: $brand-warning;
+.table .custom-thead-two {
+    background-color: $brand-danger;
+    color: #fff
+}
+.suggestions-one .card .card-body p span {
+    @include icon-style($brand-warning);
     font-weight: 600;
     margin-right: 5px;
 }
-.suggestions .custom-student-btn-detailes:hover {
+.suggestions-one .custom-student-btn-detailes:hover {
     background-color: $brand-warning;
     border-color: $brand-warning;
     color:#fff;
     font-weight: 700;
 }
-.suggestions .card:hover {
+.suggestions-one .card:hover {
     border-color: $brand-warning;
     box-shadow: 0 0 15px $brand-warning;
+}
+.suggestions-two .card .card-body p span {
+    @include icon-style($brand-danger);
+    font-weight: 600;
+    margin-right: 5px;
+}
+.suggestions-two .custom-student-btn-detailes:hover {
+    background-color: $brand-danger;
+    border-color: $brand-danger;
+    color:#fff;
+    font-weight: 700;
+}
+.suggestions-two .card:hover {
+    border-color: $brand-danger;
+    box-shadow: 0 0 15px $brand-danger;
 }
